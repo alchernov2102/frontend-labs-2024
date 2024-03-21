@@ -1,0 +1,58 @@
+.main-section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  height: 30rem;
+  padding: 2rem 5rem 2rem 5rem;
+  background-color: #1e1e2e;
+  border-radius: 10px;
+  color: white;
+  font-style: bold;
+  font-family: "JetBrains Mono";
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 4rem;
+  padding: 0.5rem;
+  background-color: #ffb700;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+a{
+  text-decoration: none;
+}
+.profile-picture {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
