@@ -1,0 +1,136 @@
+@wide-section-width: 66rem;
+@wide-section-height: 48rem;
+
+#colors() {
+    primary: #006363;
+    secondary:#5CCCCC ;
+  }
+
+body {
+    background: linear-gradient(90deg, rgba(0,99,99,1) 0%, #009999 35%, #colors[secondary] 100%); 
+}
+
+.main-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    height: 30rem;
+    padding: 2rem 4rem 2rem 4rem;
+    background-color: #colors[primary] ;
+    border-radius: 10px;
+    color: white;
+    font-style: bold;
+    font-family: "JetBrains Mono";
+  }
+  
+  .wide-section {
+    width: @wide-section-width;
+    height: @wide-section-height;
+  }
+  
+  .card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+  
+  .about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 4rem;
+    padding: 0.5rem;
+    background-color: #colors[secondary];
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .card-footer {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .grid-photo {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+  }
+  
+  .grid-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+  }
+  
+  .image-album{
+    width: 12rem;
+    height: 8rem;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .profile-picture {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  
+  .schedule-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+    /* border-spacing: 1rem 0.5rem; */
+    width: 100%;
+  }
+  
+  th {
+    background-color: lightgray;
+    color: #colors[primary] ;
+    font-weight: bold;
+    border: 1px solid #colors[primary] ;
+    padding: 1rem;
+  }
+  
+  td {
+      padding: 0.5rem;
+  }
+  
+  .schedule-table tr:nth-child(odd){background-color: lightgrey; color: #colors[primary] ;}
+  
+  
